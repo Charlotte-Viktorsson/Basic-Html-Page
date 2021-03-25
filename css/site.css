@@ -3,7 +3,8 @@
 }
 
 body {
-    width: 1024px; 
+    width: 1024px;
+    margin:auto;
 }
 
 .indexLayoutGrid {
@@ -16,7 +17,6 @@ body {
     'main main right'
     'footer footer footer';
     grid-gap: 10px;
-    padding: 10px;
 }
 
 .loginLayoutGrid {
@@ -27,13 +27,11 @@ body {
     'main main main'
     'footer footer footer';
     grid-gap: 10px;
-    padding: 10px;
 }
 
 /* Header area styles*/
 header {
     grid-area: header;
-    width: 1024px;
     display: flex;
     border-bottom: 4px solid MediumBlue;
     padding-bottom : 10px;
