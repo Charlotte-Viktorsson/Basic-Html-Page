@@ -1,39 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
+</head>
     <head>
+        <meta charset="UTF-8">
         <title>Document</title>
+        
+        <link rel="stylesheet" type="text/css" href="/css/site.css">
     </head>
-    <body>
+    <body class="indexLayoutGrid">
         <header>
-            <img src="/images/CV.PNG" alt="cv logo">
+            <img src="/images/CV.PNG" alt="cv logo" >
             <nav>
                 <ul>
-                    <li><a href="http://www.lexicon.se">Lexicon homepage</a></li>
-                    <li><a href="http://www.w3schools.com">W3School startpage</a></li>
-                    <li><a href="http://lexicon.udemy.com/learning-paths/552714">Udemy for Lexicon, Frontend learning path</a></li>    
+                    <li ><a href="http://www.lexicon.se" target="_blank" rel="noopener noreferrer">Lexicon homepage</a></li>
+                    <li ><a href="http://www.w3schools.com" target="_blank" rel="noopener noreferrer">W3School startpage</a></li>
+                    <li ><a href="http://lexicon.udemy.com/learning-paths/552714" target="_blank" rel="noopener noreferrer">Udemy for Lexicon, Frontend learning path</a></li>    
                 </ul>
             </nav>
-            <a href="login.html">Login</a>
+            <a  href="login.html" rel="noopener noreferrer">Login</a>
         </header>
         <main>
-            <h2>Articles</h2>
-            <p>Learn something new</p>
-            <article>
-                <h3>What is Lorem Ipsum</h3>
-                <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry used since the 1500s.</p>
-                <p> It is said to come from Cicero's <b>de Finibus Bonorum et Malorum</b> written in 45 BC.</p>
-                <a href="https://www.lipsum.com">Lorem Ipsum information and genarator</a>   
-            </article>
-
-            <article>
-                <h3>Equinox</h3>
-                <p>
-                    Equinoxes are the moments twice a year when days are as long as the nights.
-                </p>
-                <p>Occures around March 20 in the spring, and around September 22 in the autumn.</p>
-                <p></p>
-                <img src="/images/250px-Earth-lighting-equinox_EN.png" alt="Earth">
-            </article>
+            <div class="mainLayoutGrid">
+                <div class="articleHeader">
+                    <h1>Articles</h2>
+                    <p>Learn something new, here are some interesting articles!</p>
+                </div>
+            
+                <article>
+                    <h2>What is Lorem Ipsum</h3>
+                    <p> Lorem Ipsum is simply dummy text for the printing and typesetting industry used since the 1500s.</p>
+                    <p> It is said to come from Cicero's <b>de Finibus Bonorum et Malorum</b> written in 45 BC.</p>
+                    <a href="https://www.lipsum.com" target="_blank" rel="noopener noreferrer">Lorem Ipsum information and genarator</a>   
+                </article>
+    
+                <article>
+                    <h2>March Equinox</h3>
+                    <p>
+                        Equinoxes are the moments twice a year when days are as long as the nights.
+                    </p>
+                    <p>The March Equinox occures around March 20 which is the spring on the north side of the earth.</p>
+                    <P>The other Equinox during the year occures around September 22 which is the autumn on the north side of the earth.</p>
+                    <img src="/images/250px-Earth-lighting-equinox_EN.png" alt="Earth">
+                </article>
+            </div>
         </main>
         <aside> 
             <h3>Scandinavian cities</h3>

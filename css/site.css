@@ -1,0 +1,189 @@
+* {
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+body {
+    width: 1024px; 
+}
+
+.indexLayoutGrid {
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'main main right'
+    'main main right'
+    'main main right'
+    'main main right'
+    'footer footer footer';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.loginLayoutGrid {
+    display: grid;
+    grid-template-areas: 
+    'header header header '
+    'main main main'
+    'main main main'
+    'footer footer footer';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+/* Header area styles*/
+header {
+    grid-area: header;
+    width: 1024px;
+    display: flex;
+    border-bottom: 4px solid MediumBlue;
+    padding-bottom : 10px;
+}
+
+header img {  /*logo*/
+    align-self: flex-start;
+    padding-left: 10px;    
+}
+
+header li {
+    display: inline-block;
+	text-align: center;
+}
+
+header a { /*all links in header*/
+    display: inline-block;
+    margin-left: auto;
+    padding: .5em 1.5em;
+    text-decoration: none;
+} 
+
+header a:hover {
+    text-decoration: underline;
+}
+
+header > a {/* the Login button*/
+    padding: 1.5em;
+}
+
+/*main area*/
+main {
+    grid-area: main;
+}
+
+.mainLayoutGrid {
+    display: grid;
+    grid-template-areas: 
+    'mainHeader mainHeader mainHeader mainHeader'
+    'mainHeader mainHeader mainHeader mainHeader'
+    'mainArt1 mainArt1 mainArt2 mainArt2'
+    'mainArt1 mainArt1 mainArt2 mainArt2'
+    'mainArt1 mainArt1 mainArt2 mainArt2'
+    ;
+}
+
+.articleHeader {
+    grid-area: mainHeader;
+    padding-left: 13px;
+}
+
+article:nth-of-type(1) {
+    grid-area: mainArt1;
+}
+
+article:nth-of-type(2) {
+    grid-area: mainArt2;
+}
+
+article {
+    background-color: gainsboro;
+    width: 80%;
+    padding: 10px;
+    text-align: center;
+}
+
+/*2:nd p in 1:st article*/
+article:nth-of-type(1) p:nth-of-type(2)
+{
+    font-weight: bold;
+    color: blue;
+}
+
+aside {
+    grid-area: right;
+    display: inline-block;
+    text-align: center;
+    padding : 10px;
+    background-color: Gainsboro;
+    border : 3px solid MediumBlue;
+} 
+
+aside ul {
+    list-style-type: none;
+    padding-inline-start : 0;
+}
+
+/*odd unordered listitems*/
+aside ul>li:nth-of-type(odd) { 
+    color:blue;
+}
+
+/*odd unordered listitems*/
+aside ul>li:nth-of-type(even) {
+    color:green;
+}
+
+.loginDiv {
+    width: 50%;
+    margin: auto;
+    grid-area : main;
+}
+
+/*transform the header of the form to uppercase*/
+.loginDiv h2 {  
+    text-transform: uppercase;
+}
+
+form {
+    border: 3px solid MediumBlue;;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+input[type=text], input[type=password]{
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+
+input[type=reset] {
+    background: orange;
+    border:0 none;
+    border-radius: 5px;
+    padding:10px 20px; 
+    margin-right: 10px;
+}
+
+input[type=reset]:hover{
+    background-color: darkorange;
+}
+
+input[type=submit] {
+    background: green;
+    border:0 none;
+    border-radius: 5px; 
+    padding:10px 20px; 
+}
+
+input[type=submit]:hover {
+    background: darkgreen;
+}
+
+footer{
+    padding : 20px;
+    border-top : 4px solid MediumBlue;
+    grid-area: footer;
+    text-align: center;
+}
+
+
+
